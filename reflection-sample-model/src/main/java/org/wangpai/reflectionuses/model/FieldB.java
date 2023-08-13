@@ -1,30 +1,30 @@
 package org.wangpai.reflectionuses.model;
 
 /**
- * 参数类 ParaA
+ * 参数类 FieldB
  *
- * @since 2022-9-11
+ * @since 2023-8-13
  */
-public class ParaA {
+public class FieldB {
     private String info;
 
     /**
-     * @since 2022-9-11
+     * @since 2023-8-13
      */
-    public ParaA() {
+    public FieldB() {
         super();
     }
 
     /**
-     * @since 2022-9-11
+     * @since 2023-8-13
      */
-    public ParaA(String str) {
+    public FieldB(String str) {
         super();
         this.info = str;
     }
 
     /**
-     * @since 2022-9-11
+     * @since 2023-8-13
      */
     @Override
     public String toString() {

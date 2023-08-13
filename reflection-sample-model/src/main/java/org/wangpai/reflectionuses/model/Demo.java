@@ -4,6 +4,10 @@ package org.wangpai.reflectionuses.model;
  * @since 2022-9-11
  */
 public class Demo {
+    private FieldA fieldA;
+
+    private FieldB fieldB;
+
     /**
      * 无参构造器
      *
@@ -11,7 +15,7 @@ public class Demo {
      */
     public Demo() {
         System.out.println("无参构造器 Demo() 被调用");
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -23,7 +27,9 @@ public class Demo {
         System.out.println("构造器 Demo(ParaA paraA, ParaB paraB) 被调用");
         System.out.println("  > paraA：" + paraA);
         System.out.println("  > paraB：" + paraB);
-        System.out.println("");
+        System.out.println();
+        this.fieldA = new FieldA(paraA.toString());
+        this.fieldB = new FieldB(paraB.toString());
     }
 
     /**
@@ -35,7 +41,7 @@ public class Demo {
         System.out.println("公有静态方法 publicStaticFun(ParaA paraA, ParaB paraB) 被调用");
         System.out.println("  > paraA：" + paraA);
         System.out.println("  > paraB：" + paraB);
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -47,7 +53,7 @@ public class Demo {
         System.out.println("私有有静态方法 privateStaticFun(ParaA paraA, ParaB paraB) 被调用");
         System.out.println("  > paraA：" + paraA);
         System.out.println("  > paraB：" + paraB);
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -59,7 +65,7 @@ public class Demo {
         System.out.println("公有方法 publicFun(ParaA paraA, ParaB paraB) 被调用");
         System.out.println("  > paraA：" + paraA);
         System.out.println("  > paraB：" + paraB);
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -71,7 +77,7 @@ public class Demo {
         System.out.println("私有方法 privateFun(ParaA paraA, ParaB paraB) 被调用");
         System.out.println("  > paraA：" + paraA);
         System.out.println("  > paraB：" + paraB);
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -84,7 +90,7 @@ public class Demo {
         for (int order = 0; order < paraAS.length; ++order) {
             System.out.println(String.format("  > 可变参参数，第 %d 参数是：", order + 1) + paraAS[order]);
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -98,7 +104,7 @@ public class Demo {
         for (int order = 0; order < paraBs.length; ++order) {
             System.out.println(String.format("  > 可变参参数，第 %d 参数是：", order + 1) + paraBs[order]);
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -111,7 +117,7 @@ public class Demo {
         for (int order = 0; order < ParaAs.length; ++order) {
             System.out.println(String.format("  > 可变参参数，第 %d 参数：", order + 1) + ParaAs[order]);
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -125,6 +131,16 @@ public class Demo {
         for (int order = 0; order < paraBs.length; ++order) {
             System.out.println(String.format("  > 可变参参数，第 %d 参数：", order + 1) + paraBs[order]);
         }
-        System.out.println("");
+        System.out.println();
+    }
+
+    /**
+     * @since 2023-8-13
+     */
+    public void showFields() {
+        System.out.println("公有方法 showFields() 被调用");
+        System.out.println("  > fieldA：" + this.fieldA);
+        System.out.println("  > fieldB：" + this.fieldB);
+        System.out.println();
     }
 }

@@ -7,7 +7,7 @@
 
     <groupId>org.wangpai.reflection-sample</groupId>
     <artifactId>reflection-sample-parent</artifactId>
-    <version>0.0</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -22,7 +22,7 @@
         <maven.compiler.target>17</maven.compiler.target>
 
         <!-- 凡是自定义的属性，都要加 .custom 后缀，以防与已有的预置属性相冲突 -->
-        <project.version.custom>0.0</project.version.custom>
+        <project.version.custom>1.0</project.version.custom>
 
         <junit.version.custom>5.9.0</junit.version.custom>
         <lombok.version.custom>1.18.24</lombok.version.custom>

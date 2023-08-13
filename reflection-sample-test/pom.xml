@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.wangpai.reflection-sample</groupId>
         <artifactId>reflection-sample-parent</artifactId>
-        <version>0.0</version>
+        <version>1.0</version>
     </parent>
 
     <artifactId>reflection-sample-test</artifactId>
